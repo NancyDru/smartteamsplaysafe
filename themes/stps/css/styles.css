@@ -1,0 +1,460 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+body {
+  background-color: #ffffff;
+  font-size: 100%;
+}
+
+#header {
+  padding-left: 0;
+}
+
+#main {
+  padding: 0 0 2em 0;
+}
+
+h2 {
+  line-height: 1.4em;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+a {
+  color: #3580b7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.front a.feed-icon {
+  display: none;
+}
+
+.front li.node-readmore {
+  display: none;
+}
+
+#page {
+  background-color: #ffffff;
+}
+
+#header {
+  margin-bottom: 2em;
+  padding-top: 1em;
+  position: relative;
+}
+
+#header .block {
+  margin: 0;
+}
+
+#header #block-system-user-menu {
+  float: right;
+}
+
+#header #block-system-user-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+#header #block-system-user-menu ul li {
+  border-right: 1px dashed #f39500;
+  padding: 0 9px 0 6px;
+}
+
+#header #block-system-user-menu ul li.last {
+  border-right: 0px dashed #f39500;
+  padding-right: 0px;
+}
+
+.header__region {
+  clear: none !important;
+}
+
+a#logo {
+}
+
+a#logo img {
+}
+
+#name-and-slogan {
+  display: none;
+}
+
+.mti-logo {
+  float: right;
+  margin-top: 21px !important;
+}
+
+.mti-logo p {
+  margin: 0 !important;
+}
+
+.maintenance a#logo {
+  left: 0;
+}
+
+.maintenance #name-and-slogan {
+  margin-left: 8em;
+}
+
+.maintenance #main {
+  margin-top: 5em;
+}
+
+.maintenance #main img {
+  height: 100px;
+  margin-left: 8em !important;
+  width: 100px;
+}
+
+#block-search-form {
+  float: right;
+  margin-top: 1em !important.
+}
+
+.header__secondary-menu {
+  float: right;
+  margin-top: 1em;
+}
+
+.region-sidebar-first {
+  background-color: #f4f4ff;
+}
+
+#block-system-main-menu ul.menu {
+  margin-top: 1em;
+  padding-left: 0;
+}
+
+#block-system-main-menu ul.menu li {
+  list-style-image: none;
+  list-style-type: none;
+  margin: 1em 0;
+}
+
+#block-system-main-menu ul.menu li.active-trail {
+  background-color: #ddddff;
+}
+
+#block-system-main-menu ul.menu li a {
+  padding: 3px 6px;
+}
+
+#block-system-main-menu ul.menu li a.active {
+  color: #000000;
+  font-weight: bold;
+}
+
+#navigation {
+  background-color: #f39500 /* mt orange */;
+  height: auto;
+  position: relative;
+}
+
+#navigation ul li {
+  border-right: 1px dashed #ffffff !important;
+  display: inline;
+  float: none;
+  padding: 6px 15px !important;
+}
+
+#navigation ul li a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#navigation ul li.last {
+  border-right: 0px dashed #ffffff;
+}
+
+#navigation ul li.first {
+  margin-left: 124px;
+}
+
+#navigation ul li.active {
+  background-color: #e08000;
+}
+
+nav.breadcrumb {
+  font-family: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  margin-left: 2em;
+}
+
+#main #content {
+  clear: both;
+  margin-bottom: 6px;
+}
+
+#main #content .block {
+  border: 1px solid #666666;
+  box-shadow: 3px 3px 3px #cccccc;
+  float: left;
+  margin: 2em 10px 0 10px;
+  width: 300px;
+  min-height: 400px;
+}
+
+#main #content .block.our-films {
+  margin-left: 28px;
+}
+
+#main #content .block.last {
+  margin-right: 0;
+}
+
+#main #content .block h3.block-title {
+  margin: 6px 6px 0 6px;
+  text-align: center
+}
+
+#main #content .block img {
+  border-bottom: 1px solid #000000;
+}
+
+#main #content .block p {
+  font-size: 89%;
+  margin: 6px 6px;
+}
+
+#main #content .block .right-arrow {
+  bottom: 12px;
+  left: 15em;
+  position: relative;
+}
+
+#main #content .block img.right-arrow {
+  border-bottom: 0px !important;
+}
+
+.view-speakers {
+  width: 100%;
+}
+
+.view-speakers table caption {
+  font-size: 2em;
+  line-height: 1em;
+  padding-bottom: 6px;
+  text-align: left;
+}
+
+.view-speakers td {
+  vertical-align: top;
+}
+
+.view-speakers .views-field-field-photo {
+  padding: 0 1em 1em 1em;
+}
+
+.view-speakers .views-field-field-photo img {
+  border: 5px solid #666666;
+  border-radius: 6px;
+  -moz-box-shadow:    5px 6px 5px 1px #ccc;
+  -webkit-box-shadow: 5px 6px 5px 1px #ccc;
+  box-shadow:         5px 6px 5px 1px #ccc;
+}
+
+.view-speakers .views-field-title {
+  font-size: 85%;
+  padding-top: 1em;
+}
+
+.view-speakers .views-field-title a {
+  font-size: 1.5em;
+}
+
+.view-speakers .views-field-title p {
+  line-height: 1.5em !important;
+  margin: 3px 0 !important;
+}
+
+.view-speakers .views-field-body {
+}
+
+#block-views-sponsors-block {
+  float: none;
+  margin: 2em 10px 0 !important;
+  width: 98% !important;
+}
+
+#block-views-sponsors-block.block {
+  border: 0px !important;
+  box-shadow: none !important;
+}
+
+.view-sponsors h3 {
+  color: #3580b7;
+}
+
+.view-video-resources {
+}
+
+.view-video-resources td {
+  vertical-align: top;
+  width: 50%;
+}
+
+.view-video-resources td.col-1 {
+  padding-right: 6px;
+}
+
+.view-video-resources td.col-2 {
+  padding-left: 6px;
+}
+
+.view-video-resources .views-field-title {
+  font-size: 125%;
+  font-weight: bold;
+  min-height: 3em;
+}
+
+.twitter-feed .ext {
+  display: none;
+}
+
+.node-readmore a {
+  color: #f76425;
+}
+
+.page-node-1 h1#page-title {
+  display: none;
+}
+
+.node-1 p {
+}
+
+.node-1 a {
+}
+
+.node-1 .node-readmore {
+  display: none;
+}
+
+.node-speaker.view-mode-full .field-name-field-photo {
+  float: left;
+  margin-right: 1em;
+}
+
+/*.node-article.view-mode-full .field-name-body,*/
+.node-article.view-mode-full .field-name-field-source,
+.node-article.view-mode-full .field-name-field-authors {
+  display: flex;
+  /*margin-right: 1em;*/
+}
+
+.node-article.view-mode-full .field-name-field-tags {
+  clear: both;
+}
+
+table.pbrROL {
+  width: 100%;
+}
+
+/*** Footer ***/
+#footer {
+  background-color: #f7642e;
+  color: #ffffff;
+  font-size: 75%;
+  margin-top: 6px;
+  padding-top: 6px;
+}
+
+#footer .block {
+  line-height: 1.3em;
+  padding: 0 9px;
+}
+
+#footer .block .view {
+  float: left;
+}
+
+#footer .block h2 {
+  color: #757eb0;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+#footer .view-most-recent-blog {
+}
+
+#footer .view-most-recent-blog h3 {
+  margin: 0;
+}
+
+#footer .view-most-recent-blog .views-field-body {
+  line-height: 1.2em;
+}
+
+#footer #block-menu-menu-solutions,
+#footer #block-menu-menu-pages {
+}
+
+#footer #block-menu-menu-solutions ul.menu,
+#footer #block-menu-menu-pages ul.menu {
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+#footer #block-menu-menu-solutions li,
+#footer #block-menu-menu-pages li {
+  list-style-image: none;
+  list-style-type: none;
+  list-style-position: outside;
+  padding-bottom: 6px;
+}
+
+#footer .block a,
+#footer #block-menu-menu-solutions li a,
+#footer #block-menu-menu-pages li a {
+  color: #000000;
+}
+
+/*  Media Queries  */
+/* Leave at bottom */
+@media (max-width: 480px) {
+  #footer {
+    padding: 0 3px;
+  }
+  .maintenance #header {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #page {
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+
+  .maintenance #header {
+    margin: 5em 0 0 8em;
+  }
+}
+
